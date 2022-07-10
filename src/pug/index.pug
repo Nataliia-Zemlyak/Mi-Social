@@ -1,4 +1,5 @@
 doctype html
+include components/mixin
 html(lang="en")
     head
         meta(charset="UTF-8")
@@ -6,93 +7,14 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0 user-scalable=yes, maximum-scale=3.0, minimum-scale=1.0")
         title Document
         link(rel="stylesheet", href="css/styles.css")
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap" rel="stylesheet")
     body 
-        .wrapper 
-            .header 
-                .logo
-                h1 MISOCIAL 
-                img(src='img/Symbol.png') 
-                .menu 
-                    ul 
-                        li 
-                            a(href="#") Home 
-                        li 
-                            a(href="#") Why Misocial 
-                        li 
-                            a(href="#") Features 
-                        li 
-                            a(href="#") Articles 
-                        li 
-                            a(href="#") Pricing 
-                    a(href="#") GET STARTED 
-                .PricingTable
-                    p SOCIAL MARKETING & ANALYTICS
-                    h1 PRICING TABLE 
-                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
-            .main 
-                p MIsocial 
-                h2 Select a Plan 
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut. 
-                .main-menu 
-                    figure 
-                        .personal 
-                            figcaption 
-                                img(src='img/icon3.png')
-                                p personal  
-                                h3 0/month
-                                p Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt ut. Labore et dolore magna aliqua. quis nostrud exercitation ullamco laboris.
-                                a(href="#") select plan 
-                        .personal 
-                            figcaption 
-                                img(src='img/icon2.png')
-                                p personal  
-                                h3 29/month
-                                p Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt ut. Labore et dolore magna aliqua. quis nostrud exercitation ullamco laboris.
-                                a(href="#") select plan 
-                        .personal 
-                            figcaption 
-                                img(src='img/icon1.png')
-                                p personal  
-                                h3 49/month
-                                p Lorem ipsum dolor sit amet. sed do eiusmod tempor incididunt ut. Labore et dolore magna aliqua. quis nostrud exercitation ullamco laboris.
-                                a(href="#") select plan
-                .map 
-                    p SOCAL MARKETING & ANALYTICS
-                    h2 Take control of your data
-                    a(href="#") Get started
-                    a(href="#") explore features
-            .footer 
-                .logo
-                h1 MISOCIAL 
-                img(src='img/Symbol.png') 
-                .menu 
-                    ul 
-                        li 
-                            a(href="#") Home 
-                        li 
-                            a(href="#") Why Misocial 
-                        li 
-                            a(href="#") Features 
-                        li 
-                            a(href="#") Articles 
-                        li 
-                            a(href="#") Pricing 
-                    a(href="#") GET STARTED 
-                    hr
-
-                .copy 
-                    p © 2017 Mass Impressions & Tranmautritam. Make the right impression.
-
-
-
-
-
-
-
-
-
-
-
+        include components/header
+        include components/main
+        include components/footer
+        
 
 
         script(src="js/scripts.js")
