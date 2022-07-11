@@ -50,16 +50,18 @@
     font-family: "Maven Pro"
     color: #9fa4af
 .price 
+    display: inline-block
+    position: relative
     margin: 0
     font-size: 60px
     letter-spacing: -2px
-    line-height: 72px
     color: #4f4f6f
     font-weight: 500
     sup 
-        padding-right: 5px
-        font-size: 20px
-        line-height: 51px
+        content: ""
+        position: absolute
+        top: 12px
+        left: -10px
         font-size: 16px
         letter-spacing: -1px
         color: #4f4f6f
@@ -84,6 +86,7 @@
     
     h3 
         position: relative
+        display: inline-block
         font-size: 14px
         letter-spacing: 1px
         color: #9fa4af
@@ -94,6 +97,7 @@
             width: 25px
             height: 1px
             bottom: 15px
+            right: -35px
             background-color: #6e45e2
             
         &::before
@@ -102,6 +106,7 @@
             width: 25px
             height: 1px
             bottom: 15px
+            left: -35px
             background-color: #6e45e2
         
     h1 
@@ -133,8 +138,14 @@
         line-height: 72px
         color: #ffffff
         font-weight: 500
+    .flex 
+        justify-content: center
+        flex-wrap: wrap
 .btn 
     padding-right: 5px
+    margin: 10px 0
 
     a 
         width: 190px
+
+    

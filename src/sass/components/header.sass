@@ -7,48 +7,69 @@
     padding-top: 25px
     
     align-items: center
-.top-menu 
+        
     
-    a 
-        color: #ffffff
 .top 
     justify-content: space-between
     align-items: center
 
-        
-
-
 .logo 
     p
-        margin-left: 20px
         align-items: center
         font-size: 25px
         letter-spacing: 6px
         color: #ffffff
         font-weight: 700 
     img 
-        margin-left: 20px
         padding: 16px
+
+.top-menu
+    display: none
+    align-items: center
+    justify-content: space-between
+    +media(1030)
+        display: flex
+        position: relative 
+
+
     
 .navmenu 
     font-size: 16px
     line-height: 19px
     color: #ffffff
     font-weight: 500
-    a 
-        margin: 0 20px
-        
-
-
+    li
+        a 
+            color: #ffffff
+            padding: 15px 20px
+            position: relative
+            &::before
+                content: ""
+                position: absolute
+                bottom: 0
+                left: 0
+                width: 100%
+                height: 2px
+                background-color: transparent
+            &:hover::before
+                background-color: #fff
+                
 .PricingTable
     padding-top: 90px
     text-align: center
     h2 
-        margin: 15px
-        font-size: 86px
-        letter-spacing: -3px
+        margin: 0
+        padding: 12px 0
+        font-size: 50px
+        letter-spacing: -2px
         color: #ffffff
         font-weight: 500
+    +media(900)
+        color: #ffffff
+        line-height: 80px
+        font-size: 86px
+        padding: 30px 0
+
     p 
         font-size: 16px
         color: #ffffff
@@ -57,10 +78,12 @@
 
 strong
     position: relative
-    font-size: 14px
+    font-size: 11px
     letter-spacing: 1px
     color: #ffffff
     font-weight: 700
+    +media(900)
+        font-size: 14px
     &::after
         content: ""
         position: absolute
@@ -78,17 +101,65 @@ strong
         top: 50% 
         background-color: #ffffff
         left: -40px
-       
 
-.strilka 
-    margin: 0 auto
-    padding-top: 100px
-    padding-bottom: 50px
-    cursor: pointer
-    img
-        padding: 20px
-        left: 45%
-        top: 8%
+.poi 
+    margin: 0
+       
+.pointer 
+    display: inline-block
+    background-color: #fff
+    border-radius: 50%
+    width: 65px
+    height: 65px
+    background-image: url(../img/strilka.png)
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    margin-bottom: 130px
+    -webkit-transition: .3s all ease
+    -o-transition: .3s all ease
+    transition: .3s all ease
+    margin-top: 160px
+    &:hover 
+        background-color: #dedede
+
+.hamburger
+    height: 49px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    +media(1030)
+        display: none
+    span
+        margin: 4px 0
+        width: 35px
+        height: 3px
+        background-color: #fff
+        border-radius: 5px
+.nav-menu 
+    display: none
+    position: absolute
+    margin: 0
+    left: 0
+    right: 0
+    top: 55px
+    background-color: #e4e4ec
+    z-index: 1
+.nav-menu 
+    a 
+        display: block
+        padding: 10px 20px
+        color: #25252c
+        line-height: 24px
+        font-weight: 700
+.nav-menu 
+    li 
+        display: flex
+        flex-direction: column
+
+.active-burger 
+    display: block
+        
+
         
         
         

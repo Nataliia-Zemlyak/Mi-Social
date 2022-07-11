@@ -52,7 +52,7 @@ mixin menu (items, myclass)
     for item in items 
         li 
             a(href=item.url) #{item.name} 
-    li.get-started 
+    .get-started 
         a(href="#" class=myclass) GET STARTED 
 
 mixin card (item)
@@ -62,7 +62,9 @@ mixin card (item)
                 sourse(srcset=item.src + ".webp", type="image/webp")
                 img(src=item.src + ".png", alt=item.alt)
             p.title-card PERSONAL 
-            p.price  <sup>$</sup>#{item.price}<span>/month</span>
+            p.price 
+                sup $
+                |#{item.price}<span>/month</span>
             p.card-descr #{item.description}
             a(href=item.href class="vio") SELECT PLAN
 

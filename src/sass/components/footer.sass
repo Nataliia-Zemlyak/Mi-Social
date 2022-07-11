@@ -1,7 +1,12 @@
 .footer
     padding: 50px 0 30px
-    justify-content: space-between
+    justify-content: center
+    flex-wrap: wrap
+    flex-direction: column
     align-items: center
+    +media(1024)
+        flex-direction: row
+        justify-content: space-between
 
 .log 
     p
@@ -12,10 +17,17 @@
         color: #37374a
         font-weight: 700
     img 
-        margin-left: 7px
         padding: 23px
 
 .footer-menu 
+    align-items: center
+    flex-wrap: wrap
+    justify-content: center
+    flex-direction: column
+    li 
+        padding-bottom: 10px
+    +media(675)
+    padding-bottom: 0
     a 
         padding-left: 15px
         padding-right: 15px
@@ -25,31 +37,53 @@
         font-weight: 500
         &:hover 
             color: #756edc
+    +media(450)
+        flex-direction: row
+    +media(1030)
+        justify-content: space-between    
 
 .get-started 
+    padding-top: 10px
     a 
         border-radius: 25px
         border: 1px solid #d7dbe8
         &:hover 
             color: #ffffff
+    +media(768)
+        padding-top: 0
 
 .copyrayt
-    justify-content: space-between
+    flex-direction: column
     align-items: center
+    a 
+        svg
+            fill: #bdbdc2
+            transition: all .3s linear
+            &:hover
+                fill: #6e45e2
+    +media(690)
+        justify-content: space-between
+        flex-direction: row
         
 .copy 
     p
+        text-align: center
         font-size: 14px
         line-height: 19px
         color: #6a6a77
         font-weight: 500
-        margin-left: 30px
-        margin-top: 30px
         margin-bottom: 25px
 .social 
-    margin-right: 20px 
+    order: -2
+    padding: 10px
     a 
         margin: 0 7px
+    +media(690)
+        order: 1
 
-hr 
-    width: 95%
+        
+       
+
+
+
+    
