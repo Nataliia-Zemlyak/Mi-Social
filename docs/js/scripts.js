@@ -1,1 +1,1 @@
-let hamburger=document.querySelector(".hamburger"),menu=document.querySelector(".menu");hamburger.onclick=function(){menu.classList.toggle("active-burger")};
+let hamburger=document.querySelector(".hamburger"),menu=document.querySelector(".top-menu");hamburger.onclick=function(){menu.classList.toggle("active-burger")};
