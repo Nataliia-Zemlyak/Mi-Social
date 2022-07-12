@@ -3,8 +3,19 @@
     background-size: cover
 .header
     padding-top: 25px
-    
     align-items: center
+    h2
+        color: #ffffff
+        padding: 12px 0
+        font-size: 50px
+        letter-spacing: -2px
+        font-weight: 500
+        margin: 0
+        +media(900)
+            color: #ffffff
+            line-height: 86px
+            font-size: 86px
+            padding: 30px 0
 .navmenu
     display: none
     +media(1030)
@@ -30,7 +41,6 @@
         padding: 16px
     
 .top-menu 
-    
     font-size: 16px
     line-height: 19px
     color: #ffffff
@@ -54,18 +64,7 @@
 .PricingTable
     padding-top: 90px
     text-align: center
-    h2
-        color: #ffffff
-        padding: 12px 0
-        font-size: 50px
-        letter-spacing: -2px
-        font-weight: 500
-        margin: 0
-        +media(900)
-            color: #ffffff
-            line-height: 86px
-            font-size: 86px
-            padding: 30px 0
+    
     p 
         font-size: 16px
         color: #ffffff
@@ -134,13 +133,13 @@ strong
 
 
 .active-burger 
-    display: block
+    display: inline-block
     position: absolute
     flex-direction: column
+    text-align: center
     top: 80px
     left: 0
     right: 0
-    text-align: center
     background: url(../img/header.png) no-repeat
     background-size: cover
     
